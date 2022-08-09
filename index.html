@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>
+        <h1>Player AmirHo3ein_zM</h1>
+        <input id="vid" maxlength="400" autocomplete="off" name="vid" type="text" placeholder="Dont Be Shy Tell Me.."></input>
+        <button id="button" onclick="return play()">Play!</button><br>
+        <video id="player" controls="controls" poster="none" autoplay="autoplay" loop="loop" tabindex="0" class="video" src=""></video>
+        
+    </center>
+<script>
+    function play()
+    {
+        var qry=document.getElementById("vid").value;
+        if(qry==null)
+        {
+            alert("Enter URl First!")
+        }
+        else
+        {
+            document.getElementById("player").src=qry;
+        }
+    
+    }
+</script>
+</body>
+</html>

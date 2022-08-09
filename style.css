@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+}
+.center{
+    margin: auto;
+    width: 60%;
+    align-items: center;
+}
+input[type=text], select {
+    width: 75%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    user-select: none;
+    width: 75%;
+    background-color: dodgerblue;
+    color: white;
+    max-width: 100px;
+    padding: 14px 20px ;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+button:hover{
+    background-color: white;
+    color: dodgerblue;
+    border-radius: 10px;
+}
+h1{
+    position: relative;
+    user-select: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway' , sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 72px;
+    margin: 20px 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 600px;
+    filter:blur(0px);
+    transition-duration: 0.5s;
+    
+}
+
+h1:hover{
+    filter: blur(5px);
+}
+
+#player{
+    width: 550px;
+    height: 300px;
+    max-width: 720px;
+    min-height: 200px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+input{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    }
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
